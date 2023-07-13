@@ -1,0 +1,101 @@
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+div.container {
+  margin: 20px auto;
+}
+
+div.card {
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: #6a6886;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+}
+h2,
+h3,
+h4 {
+  color: #674e6d;
+  text-align: left;
+  padding: 5px;
+  margin: 5px 5px 5px 30px;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+  color: #674e6d;
+}
+
+.date {
+  color: #674e6d;
+  text-align: left;
+  padding: 5px;
+  margin: 5px 5px 5px 30px;
+}
+
+form {
+  position: absolute;
+  left: 40px;
+}
+
+.change-location {
+  color: #674e6d;
+  border-radius: 3px;
+  border: 1px solid #493f66;
+  margin: 3px;
+}
+.button {
+  color: #674e6d;
+  border-radius: 3px;
+  border: 1px solid #493f66;
+  margin: 3px;
+}
+
+.current {
+  background-color: green;
+  color: white;
+  border: 1px solid #493f66;
+  border-radius: 3px;
+  margin: 3px;
+}
+
+.weather-details {
+  color: #493f66;
+  text-align: right;
+  padding: 10px;
+}
+div.card-body {
+  margin: 40px 30px;
+  padding: 20px;
+}
+.outline {
+  border: 1px solid #493f66;
+  border-radius: 3px;
+  margin: 10px;
+  transition: all 200ms ease-in-out;
+}
+.outline:hover {
+  background-color: #b8b2d2;
+}
+.weather-clipart {
+  display: block;
+  margin: 20px auto;
+  width: 80px;
+}
+.day {
+  color: #493f66;
+  margin: 17px;
+  text-align: center;
+}
+.degree {
+  color: #493f66;
+  margin: 17px;
+  text-align: center;
+}

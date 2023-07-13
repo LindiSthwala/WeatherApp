@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>🌤️ WeatherApp</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="container text-center">
+          <div class="row align-items-start">
+            <div class="col">
+              <div id="emoji">🌤️</div>
+              <h1 id="city">Pretoria</h1>
+              <h2>
+                <span id="temperature">22</span>
+                <span class="values">
+                  <a href="#" id="celsius-link"> °C </a>
+                  |
+                  <a href="#" id="farenheit-link"> °F </a>
+                </span>
+              </h2>
+              <h3>Clear</h3>
+              <h4>
+                <span id="maxtemp"> 25°</span>
+                /
+                <span id="mintemp"> 14°</span>
+              </h4>
+              <p class="date">Sun, 29 May 11:36</p>
+              <form id="search-form">
+                <input
+                  type="text"
+                  placeholder="Change location"
+                  class="change-location"
+                  id="search-text-input"
+                />
+                <input type="submit" value="Search" class="button" />
+                <span>
+                  <button class="current">Current city</button>
+                </span>
+              </form>
+            </div>
+
+            <div class="col">
+              <div class="weather-details">
+                <p>
+                  Today's weather
+                  <br />
+                  <br />
+                  <strong id="todaysWeather">22°C</strong>
+                </p>
+                <p>
+                  <img src="images/wind.png" alt="wind" width="50" />
+                  Wind
+                  <br />
+                  <strong id="windspeed">10-25km/h</strong>
+                </p>
+                <!--<p>
+                  <img
+                    src="images/chance_of_rain.png"
+                    alt="chance_of_rain"
+                    width="50"
+                  />
+                  Chance of Rain
+                  <br />
+                  <strong>0%</strong>
+                </p> -->
+                <p>
+                  <img src="images/pressure.png" alt="airpressure" width="50" />
+                  Air Pressure
+                  <br />
+                  <strong id="pressure">1021 mb</strong>
+                </p>
+                <p>
+                  <img src="images/humidity.png" alt="humidity" width="50" />
+                  Humidity
+                  <br />
+                  <strong id="humidity">49%</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="row">
+          <div class="col">
+            <div class="outline">
+              <p class="degree">24°/16°</p>
+              <img src="images/sun.png" alt="sun" class="weather-clipart" />
+              <p class="day">MON</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="outline">
+              <p class="degree">24°/13°</p>
+              <img src="images/sun.png" alt="sun" class="weather-clipart" />
+              <p class="day">TUE</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="outline">
+              <p class="degree">24°/12°</p>
+              <img src="images/cloud.png" alt="sun" class="weather-clipart" />
+              <p class="day">WED</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="outline">
+              <p class="degree">26°/11°</p>
+              <img src="images/sun.png" alt="sun" class="weather-clipart" />
+              <p class="day">THU</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="outline">
+              <p class="degree">24°/13°</p>
+              <img src="images/sun.png" alt="sun" class="weather-clipart" />
+              <p class="day">FRI</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
